@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fake News Blocker",
+  "description": "Redirect users away from entering a fake news site",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
+
+
+/*
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "run_at": "document_end"
+  }
+],*/
